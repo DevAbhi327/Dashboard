@@ -48,29 +48,29 @@ const LoginForm = () => {
     if (loading) return;
     setLoading(true);
 
-    try {
-      const response = await loginApi({
-        username: username.value,
-        password: password.value,
-      });
-      dispatch(
-        setUserInfo(
-          Object.assign(jwtDecode(response), { token: response })
-        )
-      );
+    // try {
+    //   const response = await loginApi({
+    //     username: username.value,
+    //     password: password.value,
+    //   });
+    //   dispatch(
+    //     setUserInfo(
+    //       Object.assign(jwtDecode(response), { token: response })
+    //     )
+    //   );
 
-      if (remember) {
-        storeEncryptedValue("token", response);
-      }
+    //   if (remember) {
+    //     storeEncryptedValue("token", response);
+    //   }
       
-    } catch (error) {
-      console.log(error);
-      SwalError.fire({
-        title: error?.response?.data?.message || "An error occurred.",
-      });
-    } finally {
-      setLoading(false);
-    }
+    // } catch (error) {
+    //   console.log(error);
+    //   SwalError.fire({
+    //     title: error?.response?.data?.message || "An error occurred.",
+    //   });
+    // } finally {
+    //   setLoading(false);
+    // }
   };
 
   return (

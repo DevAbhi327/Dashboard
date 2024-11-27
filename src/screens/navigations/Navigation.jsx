@@ -9,7 +9,7 @@ const Navigation = () => {
 
   return (
     <>
-      <BrowserRouter>{userInfo?.token ? <Authenticate /> : <Auth />}</BrowserRouter>
+      <BrowserRouter>{true ? <Authenticate /> : <Auth />}</BrowserRouter>
     </>
   );
 };
