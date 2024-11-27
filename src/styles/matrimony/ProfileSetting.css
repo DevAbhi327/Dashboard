@@ -1,0 +1,154 @@
+.ProfileSetting .boxHead {
+  padding-bottom: 1.6rem;
+  border-bottom: 0.8px solid #eff2ff;
+}
+.ProfileSetting .boxBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.ProfileSetting .innerHeading {
+  color: var(--text-primary);
+  font-family: Inter;
+  font-size: 1.36rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20.4px; /*150%*/
+  margin: 1.6rem 0;
+}
+.ProfileSetting .inputLabel {
+  color: var(--text-primary);
+  font-family: Inter;
+  font-size: 1.28rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.2px;
+  margin-bottom: .8rem;
+}
+.ProfileSetting .picture {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.ProfileSetting .picture .pic {
+  min-width: 8rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.4rem;
+  background: lightgray;
+  overflow: hidden;
+}
+.ProfileSetting .picture .pic img {
+  height: 100%;
+  object-fit: cover;
+}
+.ProfileSetting .picture .changePicBtns {
+  display: flex;
+  gap: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.ProfileSetting .picture .changePicBtns button {
+  padding: 0.8rem 0.8rem;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.ProfileSetting .picture .changePicBtns button.change {
+  background-color: var(--native-blue);
+  color: var(--white);
+}
+.ProfileSetting .picture .changePicBtns button.remove {
+  background-color: #f5f7fa;
+  color: var(--text-primary);
+}
+.ProfileSetting .picture .note {
+  color: #8d9eb5;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /*150%*/
+}
+.ProfileSetting .input_container {
+  margin-top: 1rem;
+}
+.ProfileSetting .input_container .inputFieldBox {
+  min-width: 49%;
+  width: 49%;
+}
+.ProfileSetting .input_container .inputFieldBox.w50 {
+  min-width: 23.5%;
+  width: 23.5%;
+}
+.ProfileSetting .input_container .inputFieldBox.textareaInput {
+  min-width: 100%;
+  width: 100%;
+}
+.ProfileSetting .input_container .status .cardValue {
+  border-radius: 0px var(--4, 4px) var(--4, 4px) 0px;
+  border: 1px solid #f5f7fa;
+  padding: 0.8rem 1.4rem;
+  font-size: 1.28rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-family: Montserrat;
+  margin-top: 1.6rem;
+  display: block;
+  text-align: center;
+  width: fit-content ;
+}
+.ProfileSetting .setting .head {
+  width: 100%;
+  display: flex;
+  gap: .6rem;
+  justify-content: space-between;
+}
+.ProfileSetting .setting .head .left .para {
+  color: #8d9eb5;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /*150%*/
+}
+.ProfileSetting .setting .head .send {
+  color: var(--native-blue);
+  font-family: Inter;
+  font-size: 1.36rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.4px; /*150%*/
+  text-decoration-line: underline;
+}
+.ProfileSetting .setting.roles .head {
+margin-bottom: 1rem;
+}
+.ProfileSetting .centerBtns {
+justify-content: flex-end;
+margin-bottom: 0;
+}
+.ProfileSetting .centerBtns .ButtonMain {
+box-shadow: none;
+}
+
+
+
+@media (min-width:299px) and (max-width:499px) {
+  .ProfileSetting .input_container .inputFieldBox.w50{
+    min-width: 49%;
+    width: 49%;
+  }
+  .ProfileSetting .setting .head{
+    align-items: flex-start;
+    gap: .4rem;
+  }
+  .ProfileSetting .setting .head .send{
+    text-wrap: nowrap;
+  }
+}

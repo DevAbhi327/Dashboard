@@ -1,0 +1,878 @@
+.MatrimonyUserProfile {
+  width: 100%;
+  padding-bottom: 1.4rem;
+}
+.MatrimonyUserProfile .innerBox {
+  overflow: hidden;
+}
+.MatrimonyUserProfile .profileBanner {
+  width: 100%;
+}
+.MatrimonyUserProfile .profileBanner .bannerImg {
+  width: 100%;
+  /* height: 18.8rem; */
+}
+.MatrimonyUserProfile .profileBanner .content {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--white);
+  position: relative;
+  padding-top: 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.MatrimonyUserProfile .profileBanner .content .userPic {
+  min-width: 6rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.4rem solid var(--white);
+  position: absolute;
+  top: -3.2rem;
+  left: 1.6rem;
+}
+.MatrimonyUserProfile .profileBanner .content .userPic img {
+  height: 100%;
+  object-fit: cover;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .nameTick {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .nameTick .name {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .nameTick .tickPng {
+  width: 2rem;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .userStatus {
+  font-size: 1.1rem;
+  color: var(--text-light-primary);
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .addRegion {
+  display: flex;
+  gap: 1rem;
+}
+.MatrimonyUserProfile .profileBanner .content .leftContent .addRegion p {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: fit-content;
+}
+.MatrimonyUserProfile .profileBanner .content .rightCards {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+.MatrimonyUserProfile .profileBanner .content .rightCards .TotalCardMatrimony {
+  border-radius: 0.48rem;
+  border: 1px solid var(--card-border);
+  background: #f5f7fa;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony
+  .icon {
+  min-width: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony
+  .icon
+  .iconSvg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(1n)
+  .icon {
+  background-color: var(--native-light-blue);
+  border: 1px solid var(--native-blue-border);
+}
+
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(2n)
+  .icon {
+  background-color: var(--yummy-light-purple);
+  border: 1px solid var(--yummy-purple-border);
+}
+
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(3n)
+  .icon {
+  background-color: var(--success-light-green);
+  border: 1px solid var(--success-green-border);
+}
+
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(4n)
+  .icon {
+  background-color: var(--salty-light-orange);
+  border: 1px solid var(--salty-orange-border);
+}
+
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(1n)
+  .icon
+  .iconSvg {
+  background-color: var(--native-blue);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(2n)
+  .icon
+  .iconSvg {
+  background-color: var(--yummy-purple);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(3n)
+  .icon
+  .iconSvg {
+  background-color: var(--success-green);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony:nth-child(4n)
+  .icon
+  .iconSvg {
+  background-color: var(--salty-orange);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony
+  .txt
+  h6 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+.MatrimonyUserProfile
+  .profileBanner
+  .content
+  .rightCards
+  .TotalCardMatrimony
+  .txt
+  p {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+}
+
+/* center_container */
+
+.MatrimonyUserProfile .center_container {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  margin-top: 2rem;
+}
+.MatrimonyUserProfile .center_container .container_left {
+  width: 74%;
+}
+/* ================= user profile tab start ================ */
+.MatrimonyUserProfile .center_container .container_left .userProfileTab {
+  width: fit-content;
+  max-width: 100%;
+  background-color: var(--white);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 1px solid var(--success-green);
+  scrollbar-width: none;
+  display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.MatrimonyUserProfile
+  .center_container
+  .container_left
+  .userProfileTab::-webkit-scrollbar {
+  display: none;
+}
+.MatrimonyUserProfile
+  .center_container
+  .container_left
+  .userProfileTab
+  .nav-link {
+  font-size: 1.36rem;
+  font-family: Montserrat , serif;
+  font-weight: 500;
+  padding: 1.4rem 1.4rem;
+  min-width: 12rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: none;
+}
+.MatrimonyUserProfile
+  .center_container
+  .container_left
+  .userProfileTab
+  .nav-link:hover,
+.MatrimonyUserProfile
+  .center_container
+  .container_left
+  .userProfileTab
+  .nav-link.active {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: var(--success-green);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.MatrimonyUserProfile
+  .center_container
+  .container_left
+  .userProfileTab_body
+  .tab_body {
+  width: 100%;
+  background-color: var(--white);
+  border-top-right-radius: 0.4rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/* ================= user profile tab start ================ */
+.MatrimonyUserProfile .center_container .container_right {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* ================== MatrimonyGeneralDetails start ============== */
+.MatrimonyGeneralDetails .innerBox .keyValues {
+  width: 100%;
+}
+.MatrimonyGeneralDetails .innerBox .keyValues .KeyValueType {
+  width: 100%;
+  padding: 1.4rem;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* ================== MatrimonyGeneralDetails end ============== */
+
+/* ================== MatrimonyConnections start ============== */
+.MatrimonyConnections .innerBox .connection_cards {
+  width: 100%;
+}
+.MatrimonyConnections .innerBox .connection_cards .connection_card {
+  width: 100%;
+  padding: 1.4rem;
+  border-bottom: 1px solid var(--card-border);
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.MatrimonyConnections .innerBox .connection_cards .connection_card .userpic {
+  min-width: 2.6rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.MatrimonyConnections .innerBox .connection_cards .connection_card .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MatrimonyConnections
+  .innerBox
+  .connection_cards
+  .connection_card
+  .content
+  .name {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.MatrimonyConnections
+  .innerBox
+  .connection_cards
+  .connection_card
+  .content
+  .plusToggle {
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--native-blue);
+  background-color: var(--native-light-blue);
+  border: 1px solid var(--native-blue-border);
+  transition: all 0.3s ease-in;
+}
+.MatrimonyConnections
+  .innerBox
+  .connection_cards
+  .connection_card
+  .content
+  .plusToggle:hover {
+  color: var(--white);
+  background-color: var(--native-blue);
+  transition: all 0.3s ease-out;
+}
+/* ================== MatrimonyConnections end ============== */
+/* ================== MatrimonyUserDetailTab start ============== */
+
+.tab_innerBox {
+  width: 100%;
+  padding: 2rem 2.6rem;
+  border-bottom: 1px solid var(--card-border);
+}
+.tab_innerBox:last-of-type {
+  border: none;
+}
+.tab_innerBox .heading {
+  font-size: 1.5rem;
+  font-family: Montserrat, serif;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+}
+.tab_innerBox .keyValue_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  column-gap: 1.6rem;
+}
+.tab_innerBox .keyValue_container .interestTag {
+  font-size: 1rem;
+  color: #8d9eb5;
+  background-color: #f5f7fa;
+  border: 1px solid var(--native-blue-border);
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+}
+/* ================== MatrimonyUserDetailTab end ============== */
+
+.keyValue_container.social {
+  column-gap: 4% !important;
+  flex-wrap: nowrap !important;
+}
+.UserSocialMediaCard {
+  display: flex;
+  gap: 1rem;
+  width: 24%;
+}
+.UserSocialMediaCard .socialIcon {
+  min-width: 3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserSocialMediaCard .socialIcon img {
+  width: 60%;
+}
+.UserSocialMediaCard:nth-child(1n) .socialIcon {
+  background-color: var(--native-light-blue);
+  border: 1px solid var(--native-blue-border);
+}
+.UserSocialMediaCard .txt h6 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+.UserSocialMediaCard .txt p {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  word-break: break-all;
+}
+
+.MatrimonyUserEditDetailTab .update {
+  padding: 1.2rem 2.6rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  border: 1px solid #bbbfc1;
+  margin: 2.6rem;
+  border-radius: 0.4rem;
+}
+/* ================ input fields setup start ================= */
+.input_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 1.6rem;
+  margin-top: 2.2rem;
+}
+.input_container .inputField {
+  width: 32%;
+  border: 1px solid #cfd3d4;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+.input_container.full .inputField {
+  width: 100%;
+}
+.input_container .inputField .key {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+.input_container .inputField input,
+.input_container textarea,
+.input_container .inputField select {
+  font-size: 1.1rem;
+  color: var(--text-light-primary);
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.input_container textarea {
+  min-height: 10rem;
+  border: 1px solid #cfd3d4;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  scrollbar-width: none;
+}
+
+/* ================ input fields setup end ================= */
+
+/* ================== MatrimonyUserTimeline start ======================== */
+.MatrimonyUserTimeline {
+  width: 100%;
+  position: relative;
+  padding: 2rem;
+}
+.MatrimonyUserTimeline_inner {
+  width: 100%;
+  height: 51rem;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scrollbar-width: 0;
+}
+.MatrimonyUserTimeline .centerline {
+  min-width: 100%;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--text-primary);
+  position: absolute;
+  top: 46.5%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.MatrimonyUserTimeline_inner::-webkit-scrollbar {
+  display: none;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard {
+  min-width: 30rem;
+  width: 30rem;
+  height: fit-content;
+  position: relative;
+  margin-left: 3rem;
+}
+
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard .cardImg {
+  width: 100%;
+  height: 18rem;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard .txt {
+  width: 100%;
+  padding: 1.2rem 0;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard .txt .title {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard .txt p {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard .cardImg img {
+  height: 100%;
+  object-fit: cover;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard:nth-child(even) {
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard:nth-child(odd)::after {
+  border-left: 1px solid var(--text-primary);
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  bottom: 0;
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard:nth-child(even)::after {
+  border-left: 1px solid var(--text-primary);
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  top: -0.6rem;
+  height: 103%;
+  width: 100%;
+}
+.MatrimonyUserTimeline_inner .MatrimonyTimelineCard:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: -1rem;
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+}
+/* ================== MatrimonyUserTimeline end ======================== */
+/* ================== MatrimonyUserGallery start ======================== */
+.MatrimonyUserGallery {
+  padding: 1.6rem;
+  width: 100%;
+}
+.MatrimonyUserGallery .image_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 2rem;
+}
+.MatrimonyUserGallery .image_container .imgBox {
+  min-width: 49%;
+  width: 49%;
+}
+.MatrimonyUserGallery .image_container .imgBox.multi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 2rem;
+}
+.MatrimonyUserGallery .image_container .imgBox.multi img {
+  min-width: 49%;
+  width: 49%;
+}
+/* ================== MatrimonyUserGallery end ======================== */
+/* ================== user connection start ======================== */
+.userConnectionCards {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 2rem;
+  padding: 3% 5%;
+  scrollbar-width: none;
+  overflow-y: auto;
+}
+.UserConnectionCard {
+  min-width: 32%;
+  width: 32%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background: var(--white);
+  box-shadow: 0px 0px 24px 0px rgba(12, 12, 13, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.UserConnectionCard .pic{
+  min-width: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 1.6rem;
+}
+.UserConnectionCard .pic img{
+  height: 100%;
+  object-fit: cover;
+}
+.UserConnectionCard .detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+}
+.UserConnectionCard .detail .name{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--black);
+  padding: 0 1.4rem;
+}
+.UserConnectionCard .detail .cast{
+  font-size: 1.2rem;
+  color: var(--black);
+  padding: 0 1.4rem;
+}
+.UserConnectionCard .socialLinks{
+ width: 100%;
+ display: flex;
+ gap: 1.2rem;
+ justify-content: space-around;
+ padding: 0 1.4rem;
+}
+.UserConnectionCard .socialLinks .socialCard{
+min-width: 3rem;
+width: 3rem;
+height: 3rem;
+border-radius: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.UserConnectionCard .socialLinks .socialCard img{
+  width: 75%;
+}
+.UserConnectionCard .socialLinks a:nth-child(1) .socialCard{
+background-color: var(--native-light-blue);
+}
+.UserConnectionCard .socialLinks a:nth-child(2) .socialCard{
+background-color: rgba(254, 84, 84, 0.20);
+}
+.UserConnectionCard .socialLinks a:nth-child(3) .socialCard{
+background-color: var(--success-light-green);
+}
+.UserConnectionCard .socialLinks a:nth-child(4) .socialCard{
+background-color: var(--native-light-blue);
+}
+.UserConnectionCard .para{
+font-size: 1.1rem;
+color: var(--text-light-primary);
+margin-top: 1rem;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+font-weight: 400;
+line-height: 1.5rem;
+padding: 0 1.4rem;
+}
+.UserConnectionCard .btm{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.4rem;
+  border-top: 1px solid #bbb;
+}
+.UserConnectionCard .btm .view{
+background-color: var(--black);
+color: var(--white);
+font-size: .8rem;
+padding: .8rem 1.4rem;
+text-transform: uppercase;
+font-weight: 600;
+border-radius: .4rem;
+}
+.UserConnectionCard .btm .menuMore{
+  color: var(--black);
+  font-size: 1.2rem;
+  padding: .8rem;
+  border-radius: .4rem;
+  }
+/* ================== user connection end ======================== */
+
+
+/*  ======================== responsive start ===================== */
+@media (min-width: 999px) and (max-width: 1199px){
+  .UserConnectionCard {
+    min-width: 48%;
+    width: 48%;
+}
+}
+
+@media (min-width: 299px) and (max-width: 799px) {
+  .UserConnectionCard {
+    min-width: 100%;
+    width: 100%;
+}
+  .MatrimonyUserProfile .profileBanner .content .userPic {
+    min-width: 4rem;
+    width: 4rem;
+    height: 4rem;
+    top: -2.2rem;
+  }
+  .MatrimonyUserProfile .profileBanner .content {
+    padding-top: 2rem;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+  .MatrimonyUserProfile .profileBanner .content .leftContent .nameTick .name {
+    font-size: 1.4rem;
+  }
+  .MatrimonyUserProfile .profileBanner .content .rightCards {
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 1rem;
+    margin: 0 auto;
+  }
+  .MatrimonyUserProfile
+    .profileBanner
+    .content
+    .rightCards
+    .TotalCardMatrimony {
+    width: 49%;
+  }
+  .MatrimonyUserProfile
+    .profileBanner
+    .content
+    .rightCards
+    .TotalCardMatrimony
+    .txt
+    h6 {
+    font-size: 1.2rem;
+  }
+  .MatrimonyUserProfile
+    .profileBanner
+    .content
+    .rightCards
+    .TotalCardMatrimony
+    .icon {
+    min-width: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 0.2rem;
+  }
+  .MatrimonyUserProfile
+    .profileBanner
+    .content
+    .rightCards
+    .TotalCardMatrimony
+    .icon
+    .iconSvg {
+    font-size: 1rem;
+  }
+  .MatrimonyUserProfile .center_container {
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  .MatrimonyUserProfile .center_container .container_left,
+  .MatrimonyUserProfile .center_container .container_right {
+    width: 100%;
+  }
+  .MatrimonyUserProfile .center_container .container_left .userProfileTab {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .MatrimonyUserProfile
+    .center_container
+    .container_left
+    .userProfileTab::-webkit-scrollbar {
+    display: none;
+  }
+  .tab_innerBox {
+    padding: 1.2rem;
+  }
+  .keyValue_container.social {
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+  }
+  .UserSocialMediaCard {
+    width: 100%;
+  }
+  .input_container .inputField {
+    width: 49%;
+  }
+  .input_container {
+    row-gap: 0.8rem;
+  }
+  .MatrimonyUserEditDetailTab .update {
+    margin: 0.6rem 1.3rem;
+  }
+  .MatrimonyUserTimeline_inner .MatrimonyTimelineCard {
+    min-width: 20rem;
+    width: 20rem;
+  }
+
+  .MatrimonyUserGallery .image_container .imgBox {
+    width: 100%;
+  }
+  .MatrimonyUserGallery .image_container .imgBox.multi,
+  .MatrimonyUserGallery .image_container {
+    row-gap: 1rem;
+  }
+}
+
+
+
+/*  ======================== responsive end ===================== */

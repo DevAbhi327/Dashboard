@@ -1,0 +1,609 @@
+.PageBreadcrumbs {
+  width: fit-content;
+  padding: 2.2rem 0;
+}
+.PageBreadcrumbs .parentPage {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+.PageBreadcrumbs .links {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.2rem;
+}
+.PageBreadcrumbs .links a,
+.PageBreadcrumbs .links p,
+.PageBreadcrumbs .links svg {
+  color: var(--text-light-primary);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.sectionGap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.innerBox {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.8rem;
+  border: 1px solid var(--card-border);
+  box-shadow: 0px 2px 0px 0px #768afe08;
+  background-color: var(--white);
+}
+.innerBox .boxHead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.8px solid var(--card-border);
+  padding: 1.2rem;
+}
+.innerBox .boxHead .heading {
+  font-size: 1.5rem;
+  font-family: Montserrat, serif;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+.sectionHeading {
+  color: var(--text-primary);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+.innerBox .boxHead .sortBy {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  border: none;
+  outline: none;
+}
+.innerBox .boxHead .viewall {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+}
+.innerBox .boxBody {
+  width: 100%;
+}
+
+.centerBtns {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 2rem 0;
+}
+
+.ButtonMain {
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-color: var(--success-green);
+  color: var(--white);
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1.429px;
+  padding: 1.2rem 2.2rem;
+  min-width: 10rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.ButtonMain.green {
+  background: var(--success-green, #32c98d);
+}
+.ButtonMain.red {
+  background: var(--dark-red);
+}
+.ButtonMain.blue {
+  background: var(--native-blue);
+}
+.ButtonMain.purple {
+  background: var(--main-purple);
+}
+.ButtonMain.default {
+  background: #F5F7FA;
+  color: var(--text-primary);
+}
+
+/* ==================== KeyValueType start =================== */
+.KeyValueType {
+  width: fit-content;
+  display: flex;
+  gap: 0.6rem;
+}
+.KeyValueType .key {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.keyValue_container .value {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-light-primary);
+}
+.KeyValueType .value {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-light-primary);
+  line-height: normal;
+}
+
+/* ==================== KeyValueType end =================== */
+
+.tableListMain .innerBox .boxHead {
+  padding: 2rem 1.6rem;
+}
+.tableListMain .innerBox .boxHead .heading {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: Montserrat;
+}
+
+.tableListMain .innerBox .boxHead .filter {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--native-light-blue);
+  color: var(--native-blue);
+  border-radius: 0.4rem;
+  margin-right: 2rem;
+}
+
+
+.dataTable_main .rdt_TableCol {
+  font-weight: 500;
+  font-size: 1.36rem;
+  color: var(--text-primary);
+  font-family: Montserrat;
+}
+.dataTable_main .rdt_TableCell div {
+  color: var(--text-primary);
+  font-size: 1.36rem;
+  font-weight: 500;
+  font-family: Montserrat;
+}
+.dataTable_main .rdt_TableRow:hover  {
+  background-color: #F6F6F6;
+  }
+.dataTable_main .rdt_TableRow:hover .rdt_TableCell div {
+  color: #61748F;
+  }
+.dataTable_main .namePic {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.dataTable_main .namePic .pic {
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.1rem solid #bbb;
+}
+.dataTable_main .castHighlight {
+  padding: 0.2rem 0.8rem;
+  background-color: var(--native-light-blue);
+  color: var(--native-blue);
+  font-size: 1rem;
+  display: block;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+.dataTable_main .actionBtns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dataTable_main .actionBtns button {
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.dataTable_main .actionBtns a {
+  color: var(--white);
+}
+.dataTable_main .actionBtns .down {
+  background-color: var(--success-green);
+}
+.dataTable_main .actionBtns .eye {
+  background-color: var(--native-blue);
+}
+
+.dataTable_main .rdt_TableCol:nth-child(2),
+.dataTable_main .rdt_TableCell:nth-child(2){
+  min-width: 16rem;
+}
+
+/* ============================ all input fields start ============================= */
+.page_subtitle {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.4rem;
+}
+.inputLabel {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.inputLabel p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.inputLabel .optional {
+  color: var(--native-blue);
+}
+
+.inputLabel span {
+  color: var(--dark-red, #f00);
+  font-size: 1rem;
+}
+
+.inputFieldBox select,
+.inputFieldBox input,
+.inputFieldBox input,
+.inputFieldBox input,
+.inputFieldBox textarea,
+.inputFieldBox .fields input {
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: 1px solid #eff0f2;
+  background: #fcfcfc;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  letter-spacing: 0.438px;
+  outline: none;
+  width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #b18d62;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.RadioInput {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.RadioInputBorder {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e9eaeb;
+}
+.textareaInput textarea {
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: 1px solid #eff0f2;
+  background: #fcfcfc;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  letter-spacing: 0.438px;
+  outline: none;
+  width: 100%;
+  min-height: 10rem;
+  color: var(--text-primary);
+}
+.innerBox .boxBody .graphContainer {
+  width: 100%;
+  padding: 1.2rem 0;
+}
+.worldmap__figure-container {
+  display: flex;
+  justify-content: center;
+}
+.SelectInputBorder {
+  border-radius: 0.8rem;
+  border: 1px solid #cfd3d4;
+  padding: 0.8rem 1.6rem;
+}
+.SelectInputBorder label {
+  color: #5e6366;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+/* .SelectInputBorder .custom-dropdown{
+  margin-top: .6rem;
+} */
+.SelectInputBorder select,
+.SelectInputBorder .dropdownOption,
+.SelectInputBorder .dropdownHeader {
+  color: var(--Black-2, #abafb1);
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+.input_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  row-gap: 2rem;
+}
+.input_container .inputFieldBox {
+  min-width: 23.5%;
+  width: 23.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* ============================ all input fields end ============================= */
+.MatrimonyRegularUserList .userListTab{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.MatrimonyRegularUserList .userListTab .nav-item {
+  border-radius: 12px 12px 0px 0px;
+  background: var(--white);
+  color: #1a2638;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.36rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.4px; /* 150% */
+}
+.MatrimonyRegularUserList .userListTab .nav-link {
+  padding: 1.2rem;
+  color: #1a2638;
+  font-family: Montserrat;
+  min-width: 14rem;
+  transition: all 0.3s ease;
+}
+.MatrimonyRegularUserList .userListTab .nav-link.active {
+  background-color: var(--main-purple);
+  color: var(--white);
+  border-radius: 12px 12px 0px 0px;
+  transition: all 0.3s ease;
+}
+.MatrimonyRegularUserList .userListTab .nav-link.hover {
+  border-radius: 12px 12px 0px 0px;
+  transition: all 0.3s ease;
+}
+
+/* ================== custom offer start ======================== */
+
+.RectangleToggleSwitch .ss_switch {
+  display: inline-block;
+  border-radius: 3.01px;
+  background: rgba(12, 215, 177, 0.3);
+}
+
+.RectangleToggleSwitch .ss_switch input {
+  display: none;
+}
+
+.RectangleToggleSwitch .ss_switch label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.RectangleToggleSwitch .ss_switch label::after {
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  position: relative;
+  top: .1rem;
+  left: .2rem;
+  background: #0CD7B1;
+  content: "ON";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.RectangleToggleSwitch .ss_switch input:checked ~ label {
+  border-color: #cbcbcb;
+}
+
+.RectangleToggleSwitch .ss_switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: var(--white);
+  content: "OFF";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-red);
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.RectangleToggleSwitch .ss_switch input:disabled ~ label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ================== custom offer end ======================== */
+
+
+/* select */
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.dropdownHeader {
+  /* padding: 1rem 1.2rem; */
+  font-size: 1.1rem;
+    color: var(--text-light-primary);
+  border-radius: 3px;
+  /* border: 1px solid #eff0f2; */
+  background: #fcfcfc;
+  font-weight: 400;
+  letter-spacing: 0.438px;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdownArrow {
+  margin-left: 10px;
+}
+
+.dropdownOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #eff0f2;
+  background-color: #fcfcfc;
+  z-index: 1;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dropdownOption {
+  font-size: 1.1rem;
+    color: var(--text-light-primary);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: #f1f1f1;
+}
+
+.dropdownOption:hover {
+  background-color: #f1f1f1;
+}
+
+/* all popup */
+
+.approve.alertModal .modal-body{
+  padding: 2rem 1.6rem;
+}
+.approve.alertModal .modal-body .msg{
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.approve.alertModal .modal-body .msgDetail{
+  font-size: 1.3rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.approve.alertModal .modal-body .centerBtns{
+  margin-bottom: 0;
+}
+.approve.alertModal .modal-body .centerBtns .popupBtn{
+  padding: .6rem 1rem;
+  border: .1rem solid;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: .4rem;
+}
+.approve.alertModal .modal-body .centerBtns .popupBtn.cancel{
+  border-color: var(--dark-red);
+  color: var(--dark-red);
+}
+.approve.alertModal .modal-body .centerBtns .popupBtn.continue{
+  background-color: var(--main-purple);
+  color: var(--white);
+}
+
+
+/* PreviewFaq */
+.PreviewFaq .modal-body{
+  padding: 2rem ;
+  padding-bottom: 0;
+}
+
+.PreviewFaq .heading{
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.PreviewFaq .para{
+  font-size: 1.3rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.ImageWithSkelton{
+  min-width: 10rem;
+  width: 100%;
+  min-height: 10rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*  ======================== responsive start ===================== */
+@media (min-width: 299px) and (max-width: 799px) {
+  .PageBreadcrumbs {
+    padding: 1.6rem 0;
+    padding-top: 0;
+  }
+  .PageBreadcrumbs .parentPage {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .PageBreadcrumbs .links a,
+  .PageBreadcrumbs .links p,
+  .PageBreadcrumbs .links svg {
+    font-size: 1rem;
+  }
+  .innerBox {
+    width: 100% !important;
+  }
+  .page_subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/*  ======================== responsive end ===================== */

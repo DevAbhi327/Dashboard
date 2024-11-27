@@ -1,0 +1,424 @@
+.MatrimonyChatSupport {
+  font-family: "Montserrat", sans-serif;
+  height: 75vh;
+}
+.MatrimonyChatSupport .inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+.MatrimonyChatSupport .inner .innerBox {
+  border-radius: 0.4rem;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.MatrimonyChatSupport .inner .userList {
+  min-width: 28rem;
+  width: 28rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  position: relative;
+}
+.MatrimonyChatSupport .inner .innerBox .head {
+  padding: 1.8rem;
+  border-bottom: 0.8px solid #eff2ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--white);
+}
+.MatrimonyChatSupport .inner .innerBox .head .detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MatrimonyChatSupport .inner .innerBox .head .heading {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+.MatrimonyChatSupport .inner .innerBox .status {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light-primary);
+}
+
+.MatrimonyChatSupport .inner .innerBox .pic {
+  min-width: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+}
+.MatrimonyChatSupport .inner .innerBox .pic img {
+  background-color: #949eb790;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.MatrimonyChatSupport .inner .innerBox .pic .circle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0rem;
+  right: 0.1rem;
+  min-width: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.8px solid var(--white);
+  background-color: #949eb7;
+}
+.MatrimonyChatSupport .inner .innerBox .pic .circle.online {
+  background-color: #0cd7b1;
+}
+
+.MatrimonyChatSupport .inner .userList .user_container .title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  padding: 1.4rem;
+}
+.MatrimonyChatSupport .inner .userList .user_container .title:first-child {
+  padding-bottom: .6rem;
+}
+.MatrimonyChatSupport .inner .userList .user_container .title:last-child {
+  padding-top: 0;
+}
+.MatrimonyChatSupport .inner .userList .user_container .chat_box {
+  width: 100%;
+}
+
+.ChatSupportUserCard {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  border-left: 0.2rem solid transparent;
+  cursor: pointer;
+}
+.ChatSupportUserCard.active {
+  border-left: 0.2rem solid var(--main-purple);
+  transition: all 0.3s ease;
+  background-color: #f5f7fa;
+}
+.ChatSupportUserCard:hover {
+  transition: all 0.3s ease;
+  background-color: #f5f7fa;
+}
+
+.ChatSupportUserCard .pic {
+  min-width: 3rem;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+.ChatSupportUserCard .pic img {
+  background-color: #949eb790;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ChatSupportUserCard .pic .circle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0rem;
+  right: 0.1rem;
+  min-width: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.8px solid var(--white);
+  background-color: #949eb7;
+}
+.ChatSupportUserCard .pic .circle.online {
+  background-color: #0cd7b1;
+}
+.ChatSupportUserCard .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.ChatSupportUserCard .content .detail {
+  width: 100%;
+}
+.ChatSupportUserCard .content .detail .name {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.ChatSupportUserCard .content .detail .msg {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  margin-top: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ChatSupportUserCard .content .time {
+  font-size: 0.8rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.MatrimonyChatSupport .userChat .dropdown-toggle::after {
+  display: none;
+}
+.MatrimonyChatSupport .userChat .dropdown-toggle {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  outline: none;
+  scale: 1;
+  transition: all 0.3s ease-in-out;
+  border-radius: .4rem;
+  color: var(--main-purple);
+  background: rgba(44, 106, 229, 0.20);
+}
+.MatrimonyChatSupport .userChat .dropdown-toggle:hover {
+  transition: all 0.3s ease-in-out;
+  scale: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.MatrimonyChatSupport .userChat .dropdown-item .list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  padding: 0.6rem;
+}
+.MatrimonyChatSupport .userChat .dropdown-menu {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 24px 0px #00000033;
+  border: none;
+}
+
+/*  */
+
+.MatrimonyChatSupport .userChat .send_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding: 2rem;
+  border-top: 0.8px solid #eff2ff;
+  box-shadow: 0px 4px 16px 0px #0000001a;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  z-index: 999;
+}
+.MatrimonyChatSupport .userChat .send_container .btmIconBtn {
+  min-width: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 2rem;
+  position: relative;
+}
+.MatrimonyChatSupport .userChat .send_container .btmIconBtn .emojiBox {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  z-index: 999;
+}
+.MatrimonyChatSupport .userChat .send_container .msgInput {
+  width: 100%;
+}
+.MatrimonyChatSupport .userChat .send_container .msgInput input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e2e6f1;
+  font-size: 1.2rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  outline: none;
+  border-radius: 0.4rem;
+  letter-spacing: 0.12rem;
+}
+.MatrimonyChatSupport .userChat .send_container .msgInput input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.MatrimonyChatSupport .userChat .send_container .btmIconBtn:first-child {
+  background-color: var(--success-green);
+}
+.MatrimonyChatSupport .userChat .send_container .btmIconBtn:last-child {
+  background-color: var(--main-purple);
+}
+
+/*  */
+
+.MatrimonyChatSupport .userChat .allMsg_container {
+  width: 100%;
+  height: 72%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox {
+  max-width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .pic {
+  min-width: 3rem;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .pic img {
+  background-color: #949eb790;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .pic .circle {
+  position: absolute;
+  z-index: 1;
+  bottom: 0rem;
+  right: 0.1rem;
+  min-width: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  border: 0.8px solid var(--white);
+  background-color: #949eb7;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .pic .circle.online {
+  background-color: #0cd7b1;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .detail {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .detail .msgHead {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox
+  .detail
+  .msgHead
+  .name {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox
+  .detail
+  .msgHead
+  .time {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .detail .allMsg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox .detail .allMsg .msg {
+  width: fit-content;
+  padding: 0.6rem 0.8rem;
+  background-color: #f5f7fa;
+  color: var(--text-primary);
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border-top-left-radius: 0;
+}
+
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox.sendMsg {
+  flex-direction: row-reverse;
+  margin-bottom: 1.4rem;
+}
+
+.MatrimonyChatSupport .userChat .allMsg_container .msgBox.sendMsg .detail {
+  justify-content: flex-end;
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox.sendMsg
+  .detail
+  .msgHead {
+  flex-direction: row-reverse;
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox.sendMsg
+  .detail
+  .msgHead
+  .msgStatus {
+  font-size: 1.6rem;
+  color: #949eb7;
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox.sendMsg
+  .detail
+  .msgHead
+  .msgStatus.recieved {
+  color: var(--success-green);
+}
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox.sendMsg
+  .detail
+  .allMsg {
+  align-items: flex-end;
+}
+
+.MatrimonyChatSupport
+  .userChat
+  .allMsg_container
+  .msgBox.sendMsg
+  .detail
+  .allMsg
+  .msg {
+  background-color: var(--main-purple);
+  border-radius: 0.4rem;
+  border-top-right-radius: 0;
+  color: var(--white);
+}

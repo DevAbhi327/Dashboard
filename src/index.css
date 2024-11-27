@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: var(--primary-black);
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #4e00b2;
+  --main-bg: #f8f8fa;
+  --main-purple: #4b164c;
+  --primary-black: #101616;
+  --text-primary: #1a2638;
+  --text-primary2: #0d0d0d;
+  --text-secondary: #6c6c6c;
+  --text-light-primary: #8d9eb5;
+  --text-light-primary2: #61748f;
+  --dark-red: #ff5f5f;
+  --star-yellow: #f4a742;
+  --card-border: #eff2ff;
+  /* primary */
+  --native-blue: #546dfe;
+  --success-green: #0cd7b1;
+  --yummy-purple: #d67cf7;
+  --salty-orange: #fe7c58;
+  /* border color */
+  --native-blue-border: #546dfe26;
+  --success-green-border: #0cd7b126;
+  --yummy-purple-border: #d77cf726;
+  --salty-orange-border: #fe7c5826;
+  /* light */
+  --native-light-blue: #546dfe26;
+  --success-light-green: #0cd7b126;
+  --yummy-light-purple: #d77cf726;
+  --salty-light-orange: #fe7c5826;
+  --light-red: #ff5f5f3e;
+
+  --frame-padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+.error {
+  font-size: 1.2rem;
+  color: var(--dark-red);
+  margin-top: 0.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.noDataSpan{
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-light-primary);
+}
+
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+@media (min-width: 299px) and (max-width: 1199px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 299px) and (max-width: 799px) {
+
+  html,
+  body {
+    font-size: 52%;
+  }
+}
+@media (min-width: 299px) and (max-width: 499px) {
+  :root {
+    --frame-padding: 1.6rem;
+  }
+  html,
+  body {
+    font-size: 50%;
+  }
+}

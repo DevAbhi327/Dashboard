@@ -1,0 +1,387 @@
+.SalesDashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-bottom: 1.4rem;
+}
+
+.SalesDashboard .innerBox {
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.8rem;
+  border: 1px solid #eff2ff;
+  box-shadow: 0px 2px 0px 0px #768afe08;
+  background-color: var(--white);
+}
+.SalesDashboard .innerBox .boxHead {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.8px solid #eff2ff;
+  padding: 1.2rem;
+}
+.SalesDashboard .innerBox .boxHead .sortBy {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  border: none;
+  outline: none;
+}
+
+.SalesDashboard .top_cards {
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  row-gap: 2rem;
+}
+.SalesDashboard .top_cards .RevenueSmallCard {
+  width: 24.5%;
+  padding: 1.2rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .imgIcon {
+  min-width: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .imgIcon .icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(1n) .imgIcon {
+  background: #546dfe26;
+  border: 1px solid #546dfe1a;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(2n) .imgIcon {
+  background: #d77cf726;
+  border: 1px solid #d77cf71a;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(3n) .imgIcon {
+  background: #0cd7b126;
+  border: 1px solid #0cd7b11a;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(4n) .imgIcon {
+  background: #fe7c5826;
+  border: 1px solid #fe7c581a;
+}
+/* inner */
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(1n) .imgIcon .icon {
+  background: #546efe;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(2n) .imgIcon .icon {
+  background: #d67cf7;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(3n) .imgIcon .icon {
+  background: #0cd7b2;
+}
+.SalesDashboard .top_cards .RevenueSmallCard:nth-child(4n) .imgIcon .icon {
+  background: #fe7c58;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .text .heading {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin: 0.4rem 0;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .text {
+  width: 100%;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .text .total {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  margin: 1.2rem 0;
+  text-align: center;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .text .name {
+  font-size: 1.36rem;
+  font-family: Montserrat, serif;
+  color: var(--text-primary);
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+.SalesDashboard .top_cards .RevenueSmallCard .text .total span {
+  color: var(--success-green);
+}
+.SalesDashboard .top_container {
+  width: 100%;
+  display: flex;
+  column-gap: 2%;
+}
+.SalesDashboard .top_container .innerBox.statistics {
+  width: 58%;
+}
+.SalesDashboard .top_container .innerBox.categories {
+  width: 40%;
+}
+.SalesDashboard .top_container .innerBox .boxBody {
+  padding: 1rem;
+}
+/* center_container */
+.SalesDashboard .center_container {
+  width: 100%;
+  display: flex;
+  column-gap: 2%;
+}
+.SalesDashboard .center_container .innerBox.sm25 {
+  width: 24%;
+}
+.SalesDashboard .center_container .innerBox.sm50 {
+  width: 50%;
+}
+.SalesDashboard .center_container .innerBox .boxBody {
+  padding: 1.2rem;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress {
+  width: 100%;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .left {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .left .circle {
+  min-width: 1.6rem;
+  width: 1.6rem;
+  min-height: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:nth-child(1n) .left .circle{
+    border: 2px solid rgba(84, 109, 254, 0.5);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:nth-child(2n) .left .circle{
+    border: 2px solid rgba(244, 167, 66, 0.50);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:nth-child(3n) .left .circle{
+    border: 2px solid rgba(12, 215, 177, 0.50);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:nth-child(4n) .left .circle{
+    border: 2px solid rgba(254, 84, 84, 0.50);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:nth-child(5n) .left .circle{
+    border: 2px solid rgba(215, 124, 247, 0.50);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .left .line {
+  width: 0.1rem;
+  height: 100%;
+  background-color: #eff2ff;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1:last-child .left .line {
+  display: none;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .right {
+  padding-bottom: 1.6rem;
+  width: 100%;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .right .txt h5{
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    display: flex;
+    justify-content: space-between;
+    gap: .6rem;
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .right .txt h5 .time{
+    font-size: 1.2rem;
+    color: var(--text-light-primary);
+}
+.SalesDashboard .center_container .innerBox .ctm_progress .card1 .right .txt p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: .6rem;
+    color: var(--text-light-primary);
+}
+.SalesDashboard .center_container .innerBox .recentTable,
+.SalesDashboard .center_container .innerBox .recentTable table{
+   width: 100%;
+}
+.SalesDashboard .center_container .innerBox .recentTable{
+   overflow-x: auto;
+   scrollbar-width: none;
+}
+.SalesDashboard .center_container .innerBox .recentTable::-webkit-scrollbar{
+  display: none;
+}
+.SalesDashboard .center_container .innerBox .recentTable table th{
+  text-wrap: nowrap;
+}
+.SalesDashboard .center_container .innerBox .recentTable table th,
+.SalesDashboard .center_container .innerBox .recentTable table td{
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: .6rem;
+}
+.SalesDashboard .center_container .innerBox .recentTable .mode{
+  width: 100%;
+  display: flex;
+  gap: .8rem;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr .mode .icon{
+ min-width: 3rem;
+ width: 3rem;
+ height: 3rem;
+ border-radius: .4rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(1n) .mode .icon{
+    background-color:  rgba(84, 110, 254, 0.145);
+    color: #546efe;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(2n) .mode .icon{
+    background-color:  rgba(244, 167, 66, 0.145);
+    color: #fe7c58;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(3n) .mode .icon{
+    background-color:  rgba(12, 215, 177, 0.145);
+    color: #0cd7b2;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(4n) .mode .icon{
+    background-color:  rgba(254, 84, 84, 0.145);
+    color:rgb(254, 84, 84) ;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(5n) .mode .icon{
+    background-color:  rgba(215, 124, 247, 0.145);
+    color: #d67cf7;
+}
+
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(1n) .status{
+    color: #546efe;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(2n) .status{
+    color: #fe7c58;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(3n) .status{
+    color: #0cd7b2;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(4n) .status{
+    color:rgb(254, 84, 84) ;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr:nth-child(5n) .status{
+    color: #d67cf7;
+}
+.SalesDashboard .center_container .innerBox .recentTable tr .value h6{
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+.SalesDashboard .center_container .innerBox .recentTable tr .value p{
+    font-size: 1rem;
+    color: var(--text-light-primary);
+    margin-top: .4rem;
+}
+
+.SalesDashboard .innerBox .boxHead .search{
+  display: flex;
+  gap: .6rem;
+}
+.SalesDashboard .innerBox .boxHead .headSearch {
+  border-radius: .4rem;
+  border: 1px solid var(--card-border);
+  background: var(--white);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  padding: .4rem .6rem;
+  /* margin-right: 1rem; */
+}
+.SalesDashboard .innerBox .boxHead .search .sortBy{
+  background-color: var(--native-blue);
+  color: var(--white);
+  padding: .5rem .6rem;
+  border-radius: .4rem;
+}
+
+  /*  ======================== responsive start ===================== */
+  
+  
+  @media (min-width:299px) and (max-width:1199px) {
+    .SalesDashboard{
+      padding-bottom: 1.4rem;
+    }
+    .SalesDashboard .center_container,
+    .SalesDashboard .top_cards{
+      flex-wrap: wrap;
+      row-gap: 1.6rem;
+    }
+    .SalesDashboard .top_cards .RevenueSmallCard{
+      min-width: 49%;
+      width: 49% !important;
+    }
+    .SalesDashboard .center_container .innerBox.sm50 {
+      width: 100%;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:first-child,
+  .SalesDashboard .center_container .innerBox.sm25:last-child{
+    width: 48%;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:first-child{
+    order: 2;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:last-child{
+    order: 3;
+  }
+
+  }
+  @media (min-width:299px) and (max-width:1199px) {
+   
+    .SalesDashboard .center_container,
+    .SalesDashboard .top_cards{
+      flex-wrap: wrap;
+      row-gap: 1.6rem;
+    }
+    .SalesDashboard .top_cards .RevenueSmallCard{
+      min-width: 49%;
+      width: 49% !important;
+    }
+    .SalesDashboard .center_container .innerBox.sm50 {
+      order: 1;
+      width: 100%;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:first-child,
+  .SalesDashboard .center_container .innerBox.sm25:last-child{
+    width: 48%;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:first-child{
+    order: 2;
+  }
+  .SalesDashboard .center_container .innerBox.sm25:last-child{
+    order: 3;
+  }
+
+  }
+  @media (min-width:299px) and (max-width:799px) {
+    .SalesDashboard .top_container{
+      flex-wrap: wrap;
+      row-gap: 1.6rem;
+    }
+    .SalesDashboard .top_cards .RevenueSmallCard .text .total{
+      text-align: left;
+    }
+  }
+  @media (min-width: 299px) and (max-width: 499px) {
+      .SalesDashboard .innerBox .boxHead{
+          flex-direction: column;
+          gap: 1.2rem;
+        }
+        .SalesDashboard .innerBox .boxHead .search{
+          justify-content: flex-end;
+        }
+  }
+  /*  ======================== responsive end ===================== */

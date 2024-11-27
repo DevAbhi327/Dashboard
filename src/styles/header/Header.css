@@ -1,0 +1,24 @@
+.Header{
+    width: 100%;
+    background-color: var(--white);
+    padding-top: 4rem;
+}
+.Header .toggleSidemenu{
+   min-width: 5rem;
+   width: 5rem;
+   height: 4.6rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--white);
+   background-color: var(--main-purple);
+   font-size: 2.2rem;
+   border-radius: 10px 10px 0px 0px;
+}
+
+
+@media (min-width: 299px) and (max-width: 799px){
+    .Header{
+        padding-top: 1rem;
+    }
+}

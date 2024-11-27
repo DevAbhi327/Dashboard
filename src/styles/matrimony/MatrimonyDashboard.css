@@ -1,0 +1,688 @@
+.MatrimonyDashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.MatrimonyDashboard .top_container {
+  width: 100%;
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2%;
+}
+.MatrimonyDashboard .top_container .overview {
+  width: 44%;
+}
+.MatrimonyDashboard .top_container .fourCards {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+.MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard {
+  width: 47%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard .sm_graph div,
+.MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard .sm_graph div .apexcharts-canvas,
+.MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard .sm_graph div .apexcharts-canvas svg{
+  min-height: 7.4rem !important;
+  height: 7.4rem !important;
+}
+
+.MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard .content {
+  width: 100%;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .iconBox {
+  min-width: 3.6rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.6rem;
+  border: 0.1rem solid;
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(1)
+  .content
+  .iconBox {
+  background-color: var(--native-light-blue);
+  border-color: var(--native-blue-border);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(2)
+  .content
+  .iconBox {
+  background-color: var(--yummy-light-purple);
+  border-color: var(--yummy-purple-border);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(3)
+  .content
+  .iconBox {
+  background-color: var(--success-light-green);
+  border-color: var(--success-green-border);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(4)
+  .content
+  .iconBox {
+  background-color: var(--salty-light-orange);
+  border-color: var(--salty-orange-border);
+}
+
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .iconBox
+  .icon {
+  min-width: 2.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(1)
+  .content
+  .iconBox
+  .icon {
+  background-color: var(--native-blue);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(2)
+  .content
+  .iconBox
+  .icon {
+  background-color: var(--yummy-purple);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(3)
+  .content
+  .iconBox
+  .icon {
+  background-color: var(--success-green);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard:nth-child(4)
+  .content
+  .iconBox
+  .icon {
+  background-color: var(--salty-orange);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .title {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .totalCount {
+  display: flex;
+  gap: 1rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .totalCount
+  span:first-child {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+.MatrimonyDashboard
+  .top_container
+  .fourCards
+  .MatrimonyUserCountCard
+  .content
+  .totalCount
+  span:last-child {
+  font-size: 1rem;
+  color: var(--success-green);
+}
+
+.MatrimonyDashboard .top_container .request {
+  width: 24%;
+}
+.MatrimonyDashboard .top_container .request .boxBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.MatrimonyDashboard .top_container .request .boxBody .request_card {
+  width: 100%;
+  padding: 1.4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.MatrimonyDashboard .top_container .request .boxBody .request_card::after {
+  min-width: 0.26rem;
+  width: 0.26rem;
+  height: 40%;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+  border-radius: 0.4rem;
+  content: "";
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card:nth-child(1n):after {
+  background-color: var(--native-blue);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card:nth-child(2n):after {
+  background-color: var(--yummy-purple);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card:nth-child(3n):after {
+  background-color: var(--success-green);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card:nth-child(4n):after {
+  background-color: var(--salty-orange);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card:nth-child(5n):after {
+  background-color: var(--dark-red);
+}
+.MatrimonyDashboard .top_container .request .boxBody .request_card .details {
+  padding-left: 0.8rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .details
+  .name {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.1rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .details
+  .cast {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .accept_btns {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .accept_btns
+  button {
+  min-width: 2.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .accept_btns
+  button.accept {
+  background-color: var(--success-light-green);
+  color: var(--success-green);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .accept_btns
+  button.reject{
+  background-color: var(--light-red);
+  color: var(--dark-red);
+}
+.MatrimonyDashboard
+  .top_container
+  .request
+  .boxBody
+  .request_card
+  .accept_btns
+  button.view{
+  background-color: var(--native-light-blue);
+  color: var(--native-blue);
+}
+/* center_container */
+.MatrimonyDashboard .center_container {
+  width: 100%;
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2%;
+}
+.MatrimonyDashboard .center_container {
+  width: 100%;
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 2%;
+}
+
+.MatrimonyDashboard .center_container .verification {
+  width: 49%;
+}
+.MatrimonyDashboard .center_container .verification .boxBody {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.MatrimonyDashboard .center_container .verification .boxBody table {
+  width: 100%;
+}
+.MatrimonyDashboard .center_container .verification .boxBody table th,
+.MatrimonyDashboard .center_container .verification .boxBody table td {
+  font-size: 1.1rem;
+  padding: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+.MatrimonyDashboard .center_container .verification .boxBody table td {
+  border-top: 0.08rem solid #eff2ff;
+}
+.MatrimonyDashboard .center_container .verification .boxBody table td .namePic {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.MatrimonyDashboard
+  .center_container
+  .verification
+  .boxBody
+  table
+  td
+  .namePic
+  .pic {
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.MatrimonyDashboard
+  .center_container
+  .verification
+  .boxBody
+  table
+  td
+  .namePic
+  .pic
+  img {
+  height: 100%;
+  object-fit: cover;
+}
+.MatrimonyDashboard .center_container .verification .boxBody table td .status {
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10rem;
+  background-color: var(--success-light-green);
+  color: var(--success-green);
+}
+.MatrimonyDashboard
+  .center_container
+  .verification
+  .boxBody
+  table
+  td
+  .status.pending {
+  color: var(--native-blue);
+  background-color: var(--native-light-blue);
+}
+.MatrimonyDashboard
+  .center_container
+  .verification
+  .boxBody
+  table
+  td
+  .status.failed {
+  color: var(--dark-red);
+  background-color: var(--light-red);
+}
+
+.MatrimonyDashboard .center_container .percentage{
+  width: 23.5%;
+}
+.MatrimonyDashboard .center_container .recent {
+  width: 74.5%;
+}
+.MatrimonyDashboard .center_container .recent .recent_card {
+  width: 100%;
+  padding: 1.4rem;
+  padding-bottom: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.MatrimonyDashboard .center_container .recent .recent_card:last-child {
+  padding: 1.4rem;
+}
+.MatrimonyDashboard .center_container .recent .recent_card::after {
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--success-green);
+  content: "";
+  top: 1.4rem;
+  left: 1.4rem;
+  position: absolute;
+  background-color: var(--white);
+}
+.MatrimonyDashboard .center_container .recent .recent_card:nth-child(1n):after {
+  border-color: var(--yummy-purple);
+}
+.MatrimonyDashboard .center_container .recent .recent_card:nth-child(2n):after {
+  border-color: var(--salty-orange);
+}
+.MatrimonyDashboard .center_container .recent .recent_card:nth-child(3n):after {
+  border-color: var(--success-green);
+}
+.MatrimonyDashboard .center_container .recent .recent_card:nth-child(4n):after {
+  border-color: var(--dark-red);
+}
+
+.MatrimonyDashboard .center_container .recent .recent_card::before {
+  min-width: 0.05rem;
+  width: 0.05rem;
+  height: 100%;
+  background-color: #eff2ff;
+  content: "";
+  top: 1.4rem;
+  left: 1.85rem;
+  position: absolute;
+}
+.MatrimonyDashboard .center_container .recent .recent_card:last-child:before {
+  display: none;
+}
+.MatrimonyDashboard .center_container .recent .recent_card .details {
+  padding-left: 2rem;
+}
+.MatrimonyDashboard .center_container .recent .recent_card .details .name {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+.MatrimonyDashboard .center_container .recent .recent_card .details .acivity,
+.MatrimonyDashboard .center_container .recent .recent_card .time {
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  margin-top: 0.4rem;
+}
+
+.MatrimonyDashboard .center_container .percentage .boxBody .values {
+  width: 100%;
+}
+.MatrimonyDashboard .center_container .percentage .boxBody .values .valueCard {
+  width: 100%;
+  padding: 1rem 1.4rem;
+  border-top: 0.08rem solid #eff2ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard
+  .left {
+  width: fit-content;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard
+  .left
+  .circle {
+  min-width: 0.8rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  display: block;
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard:nth-child(1)
+  .left
+  .circle {
+  background-color: var(--native-blue);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard:nth-child(2)
+  .left
+  .circle {
+  background-color: var(--salty-orange);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard:nth-child(3)
+  .left
+  .circle {
+  background-color: var(--success-green);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard:nth-child(4)
+  .left
+  .circle {
+  background-color: var(--yummy-purple);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard:nth-child(5)
+  .left
+  .circle {
+  background-color: var(--dark-red);
+}
+.MatrimonyDashboard
+  .center_container
+  .percentage
+  .boxBody
+  .values
+  .valueCard
+  .numberValue {
+  font-weight: 600;
+  text-wrap: nowrap;
+  font-size: 1.2rem;
+}
+
+/* TABLE */
+.MatrimonyDashboard .tableListMain .innerBox .boxHead .heading {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dataTable_main.recentOrderTable .castHighlight.success {
+  background-color: var(--success-light-green);
+  color: var(--success-green);
+}
+.dataTable_main.recentOrderTable .castHighlight.failed {
+  background-color: var(--light-red);
+  color: var(--dark-red);
+}
+
+.MatrimonyDashboard .innerBox .boxHead .search{
+    display: flex;
+    gap: .6rem;
+  }
+  .MatrimonyDashboard .innerBox .boxHead .headSearch {
+    border-radius: .4rem;
+    border: 1px solid var(--card-border);
+    background: var(--white);
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    padding: .4rem .6rem;
+    /* margin-right: 1rem; */
+  }
+  .MatrimonyDashboard .innerBox .boxHead .search .sortBy{
+    background-color: var(--native-blue);
+    color: var(--white);
+    padding: .5rem .6rem;
+    border-radius: .4rem;
+  }
+/* ==================== responsive part start ================================ */
+
+@media (min-width: 299px) and (max-width: 1199px) {
+  .MatrimonyDashboard .top_container,
+  .MatrimonyDashboard .center_container {
+    flex-wrap: wrap;
+  }
+  .MatrimonyDashboard .top_container .fourCards,
+  .MatrimonyDashboard .center_container .recent {
+    width: 49% !important;
+    order: 1;
+  }
+  .MatrimonyDashboard .center_container .recent {
+    width: 100% !important;
+    order: 1;
+  }
+  .MatrimonyDashboard .top_container .request,
+  .MatrimonyDashboard .center_container .percentage {
+    width: 49% !important;
+    order: 2;
+  }
+  .MatrimonyDashboard .top_container .overview,
+  .MatrimonyDashboard .center_container .verification {
+    width: 100%;
+    order: 3;
+  }
+}
+@media (min-width: 299px) and (max-width: 799px) {
+  .MatrimonyDashboard .top_container .fourCards .MatrimonyUserCountCard {
+    width: 48% !important;
+}
+}
+
+@media (min-width: 299px) and (max-width: 499px) {
+  .MatrimonyDashboard .top_container .request,
+  .MatrimonyDashboard .center_container .percentage,
+  .MatrimonyDashboard .top_container .fourCards,
+  .MatrimonyDashboard .center_container .recent {
+      width: 100% !important;
+    }
+    
+    .MatrimonyDashboard .top_container .fourCards{
+        row-gap: 1.4rem;
+    }
+    .MatrimonyDashboard .innerBox .boxHead{
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .MatrimonyDashboard .innerBox .boxHead .search{
+        justify-content: flex-end;
+      }
+      .MatrimonyDashboard .innerBox .boxHead .headSearch {
+        width: 100%;
+      }
+}
+
+/* ==================== responsive part end ================================ */

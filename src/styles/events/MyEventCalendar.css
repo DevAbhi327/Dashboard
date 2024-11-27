@@ -1,0 +1,155 @@
+.rbc-calendar {
+  min-height: 80vh;
+}
+
+.rbc-btn-group > button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #202224;
+  border: #d5d5d5 0.06rem solid;
+  padding: 1rem 1.4rem;
+  background-color: #fafbfd;
+  border-radius: 0.8rem;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #202224;
+}
+.rbc-toolbar button:active,
+.rbc-btn-group > button:hover,
+.rbc-toolbar button.rbc-active,
+.rbc-toolbar button:active:hover,
+.rbc-toolbar button:active:focus,
+.rbc-toolbar button.rbc-active:hover,
+.rbc-toolbar button.rbc-active:focus {
+  background-color: #5a8dff;
+  color: var(--white);
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.rbc-toolbar {
+  margin-bottom: 4rem;
+}
+.rbc-header {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #202224;
+  padding: 1.2rem;
+  background-color: #f1f4f9;
+}
+
+.rbc-month-view,
+.rbc-time-view {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  border-top: none;
+}
+.rbc-button-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.6rem;
+}
+.rbc-label,
+.rbc-agenda-view table.rbc-agenda-table tbody > tr + tr,
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td    {
+  padding: 5px;
+  font-size: 1rem;
+}
+.rbc-row .rbc-event{
+    font-size: .8rem;
+    color: var(--white);
+    border-radius: 0;
+    font-weight: 500;
+    padding: .6rem;
+}
+.rbc-row:nth-child(1n) .rbc-event {
+  background-color: #7551e945;
+  color: #7551e9;
+  border-left: .2rem solid #516fe9;
+}
+.rbc-row:nth-child(2n) .rbc-event {
+    background-color: #e951be3b;
+    color: #e951bf;
+    border-left: .2rem solid #e951bf;
+}
+.rbc-row:nth-child(3n) .rbc-event {
+    background-color: #ff9e5836;
+    color: #ff9e58;
+    border-left: .2rem solid #ff9e58;
+}
+.rbc-row:nth-child(4n) .rbc-event {
+    background-color: #5170e937;
+    color: #516fe9;
+    border-left: .2rem solid #516fe9;
+}
+
+.rbc-month-row{
+    overflow: visible;
+}
+/* EventCardPopup */
+.EventCardPopup{
+    min-width: 28rem;
+    width: 28rem;
+    box-shadow: -7px 10px 40px 0px #0000001A;
+    padding: 1.8rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: var(--white);
+    border-radius: .4rem;
+}
+.EventCardPopup .eventImg{
+   width: 100%;
+   height: 18rem;
+   margin-bottom: .8rem;
+   border-radius: .4rem;
+   overflow: hidden;
+}
+.EventCardPopup .eventImg img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.EventCardPopup .detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .EventCardPopup .detail .name {
+    color: #202224;
+    font-size: 1.2rem;
+  }
+  .EventCardPopup .detail p {
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .EventCardPopup .personList {
+    width: 100%;
+    display: flex;
+    gap: 0.6rem;
+  }
+  .EventCardPopup .personList .circleImg {
+    min-width: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    overflow: hidden;
+  }
+  .EventCardPopup .personList .circleImg.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4880ff;
+    border: 1px solid #4880ff;
+    background-color: transparent;
+    font-size: .8rem;
+  }

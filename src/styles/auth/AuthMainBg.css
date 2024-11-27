@@ -1,0 +1,349 @@
+.AuthMainBG {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+/* left text side */
+.AuthMainBG .AuthLeftSide {
+  width: 40%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AuthMainBG .AuthLeftSide .head {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3.2rem;
+}
+.AuthMainBG .AuthLeftSide .head .appLogo {
+  min-width: 4rem;
+  max-width: 8rem;
+}
+.AuthMainBG .AuthLeftSide .centerTxt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 9rem;
+}
+.AuthMainBG .AuthLeftSide .centerTxt .text {
+  width: 100%;
+  margin-bottom: 45%;
+}
+.AuthMainBG .AuthLeftSide .centerTxt .title {
+  font-size: 4rem;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+.AuthMainBG .AuthLeftSide .centerTxt .sub_para {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-weight: 300;
+  opacity: 0.8;
+  line-height: 2.2rem;
+}
+/* right form side */
+.AuthMainBG .formSide {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 12%;
+}
+
+.AuthMainBG .formSide .auth_inner {
+  width: 66%;
+}
+.AuthMainBG .formSide .auth_inner .pageName {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+.AuthMainBG .formSide .auth_inner .wlcTxt {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-light-primary);
+  margin-bottom: 1.6rem;
+}
+.AuthMainBG .formSide .auth_inner .inputFields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox {
+  width: 100%;
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox .inputLable {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox .inputLable label {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox .inputLable .forget {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  margin-right: 1rem;
+  color: var(--dark-red);
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox .inputField {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e2e6f1;
+  border-radius: 0.2rem;
+  display: flex;
+}
+.AuthMainBG .formSide .auth_inner .inputFields .inputBox .inputField input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.28rem;
+  font-weight: 400;
+  color: var(--text-light-primary);
+}
+.AuthMainBG
+  .formSide
+  .auth_inner
+  .inputFields
+  .inputBox
+  .inputField
+  .ShowHideEyeBtn {
+  color: var(--text-light-primary);
+  font-size: 1.6rem;
+}
+.AuthMainBG .formSide .auth_inner .remember {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+  gap: 0.4rem;
+  margin: 1.2rem 0;
+}
+.AuthMainBG .formSide .auth_inner .partition_line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.2rem;
+}
+.AuthMainBG .formSide .auth_inner .partition_line p {
+  text-wrap: nowrap;
+  font-size: 1rem;
+  color: var(--text-light-primary);
+  font-weight: 400;
+}
+.AuthMainBG .formSide .auth_inner .partition_line .line {
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-image: linear-gradient(#f5f7fa 30%, #000 35%, #f5f7fa 30%);
+}
+
+.AuthMainBG .formSide .auth_inner .signin_option {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.4rem;
+  margin: 1.6rem;
+}
+.AuthMainBG .formSide .auth_inner .signin_option .option {
+  min-width: 35%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid #eff2ff;
+  background-color: #f5f7fa;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+}
+.AuthMainBG .formSide .auth_inner .signin_option .option .iconPng {
+  min-width: 2rem;
+  width: 2rem;
+}
+.AuthMainBG .formSide .auth_inner .signin_option .option p {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.AuthMainBG .formSide .auth_inner .have_ac {
+  font-size: 1.1rem;
+  color: var(--text-light-primary);
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+.AuthMainBG .formSide .auth_inner .submitBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.AuthMainBG .formSide .auth_inner .authBtn {
+  font-size: 1.36rem;
+  color: var(--white);
+  background-color: var(--native-blue);
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 0.4rem;
+}
+
+/* login verify account */
+
+.AuthMainBG .formSide .auth_inner.LoginVerifyAccount {
+  width: 52%;
+}
+.AuthMainBG .formSide .auth_inner .otpFields {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.6rem 0;
+}
+.AuthMainBG .formSide .auth_inner .otpFields .singleDigit {
+  min-width: 24%;
+  width: 24%;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-light-primary);
+  border: 1px solid #e2e6f1;
+  outline: none;
+  border-radius: 0.4rem;
+}
+.AuthMainBG .formSide .auth_inner .remember .resendBtn {
+  color: var(--native-blue);
+  font-weight: 500;
+}
+.AuthMainBG .formSide .auth_inner .error.note {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+/* lock screen */
+.LoginLockScreen .userDetail {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.LoginLockScreen .userDetail .pic {
+  min-width: 2.8rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.LoginLockScreen .userDetail .pic img {
+  height: 100%;
+  object-fit: cover;
+}
+.LoginLockScreen .userDetail p {
+  color: #0a0a0a;
+  font-family: Montserrat;
+  font-size: 1.36rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20.4px; /*150%*/
+}
+.LoginLockScreen .another {
+  color: #8d9eb5;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /*112.5%*/
+  margin-top: 1.2rem;
+}
+.LoginLockScreen .another button {
+  color: #0cd7b1;
+  text-decoration: underline;
+}
+
+.AuthMainBG .formSide .auth_inner.ForgotPassword .submitBtn{
+  margin-top: 2rem;
+} 
+
+/* ====================== responsive part start =================== */
+@media (min-width: 299px) and (max-width: 1249px) {
+  .AuthMainBG .formSide .auth_inner.LoginVerifyAccount {
+    width: 80%;
+  }
+}
+@media (min-width: 299px) and (max-width: 849px) {
+  .AuthMainBG {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .AuthMainBG .AuthLeftSide,
+  .AuthMainBG .formSide {
+    width: 100%;
+  }
+  .AuthMainBG .AuthLeftSide .centerTxt .text {
+    margin-bottom: 4rem;
+  }
+  .AuthMainBG .formSide {
+    padding: 4rem 2rem;
+  }
+  .AuthMainBG .formSide .auth_inner {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 299px) and (max-width: 499px) {
+  .AuthMainBG .AuthLeftSide .centerTxt,
+  .AuthMainBG .AuthLeftSide .head {
+    padding: 2.2rem;
+  }
+  .AuthMainBG .AuthLeftSide .centerTxt .title,
+  .AuthMainBG .formSide .auth_inner .pageName {
+    font-size: 2.6rem;
+  }
+  .AuthMainBG .AuthLeftSide .centerTxt .sub_para {
+    font-size: 1.4rem;
+  }
+  .AuthMainBG .AuthLeftSide .centerTxt .text {
+    margin-bottom: 2rem;
+  }
+  .AuthMainBG .formSide {
+    padding: 3.2rem 3rem;
+  }
+  .AuthMainBG .formSide .auth_inner.LoginVerifyAccount,
+  .AuthMainBG .formSide .auth_inner {
+    width: 100%;
+  }
+  .AuthMainBG .formSide .auth_inner .partition_line {
+    margin: 2rem 0;
+  }
+  .AuthMainBG .formSide .auth_inner .otpFields {
+    margin: 2.6rem 0;
+    margin-bottom: 1rem;
+  }
+  .AuthMainBG .formSide .auth_inner.LoginVerifyAccount .remember {
+    margin-bottom: 2.6rem;
+  }
+}
+
+@media (min-width: 849px) and (max-width: 1199px) {
+  .AuthMainBG .AuthLeftSide .centerTxt {
+    padding: 0 3rem;
+  }
+  .AuthMainBG .AuthLeftSide {
+    width: 48%;
+  }
+}
+
+/* ====================== responsive part end =================== */
